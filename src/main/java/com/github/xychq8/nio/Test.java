@@ -15,8 +15,8 @@ public class Test {
         System.err.println("begin");
         long start = System.currentTimeMillis();
         int _5M = 1024*1024*5;
-        File fin = new File("D:\\debug.log");  //文件大小200M
-        File fout = new File("D:\\debug-bak.log");
+        File fin = new File("/Users/zhangxu/debug.log");  //文件大小200M
+        File fout = new File("/Users/zhangxu/debug-bak.log");
         FileChannel fcin = new RandomAccessFile(fin, "r").getChannel();
         ByteBuffer rBuffer = ByteBuffer.allocate(_5M);
         FileChannel fcout = new RandomAccessFile(fout, "rws").getChannel();
